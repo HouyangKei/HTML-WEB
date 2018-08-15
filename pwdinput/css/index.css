@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	margin: 0 auto;
+	font-family: '微软雅黑';
+	font-style: normal;
+ 
+}
+.input{
+    padding:5px 0px;
+    border:2px solid #ddd;
+    word-wrap:break-word;  /*遇到空格整个单词显示不完就自动换行到下一行*/
+	word-break:break-all;  /*如果一行没有空格就到头截断单词换行*/
+	margin: 0 auto;
+	margin-top: 10%;
+}
+.input:empty:before{
+	content: attr(placeholder);
+	color:#bbb;
+}
+.input:focus{content:none;}
+.pwd_div{
+	width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #0c0c0c;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>自定义输入框</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	
+	<body>
+		<div contenteditable="plaintext-only" class="input content" id="pwd" placeholder=""
+			onclick="setPosIndex()"
+			onkeypress="onkeypressHtml(event)"
+			onkeyup="onkeyupHtml(event)"
+			></div>
+			<object id="plugin" width="0" height="0"  style="display: none;">
+	            <param name="width" value="200"/>
+	            <param name="height" value="20"/>
+	            <param name="maxLength" value="12"/>
+	            <param name="minLength" value="6"/>
+	            <param name="backColor" value="#FFFFFF"/>
+	            <param name="textColor" value="red"/><!-- not supported -->
+	            <param name="borderColor" value="#C0C0C0"/><!-- #C0C0C0(gray, default), #FF0000(red), #00FF00(green), #0000FF(blue)-->
+	            <param name="accepts" value="^[A-Za-z0-9-]{1,30}$"/>
+	            <param name="maskChar" value="#"/><!-- not supported -->
+	            <param name="promptText" value="请输入密码"/><!-- not supported -->
+	            <param name="promptTextColor" value="#9145227"/>
+	            <param name="textFont" value="新宋体"/><!-- not supported -->
+	            <param name="textSize" value="16"/><!-- not supported -->
+	            <param name="leftMargins" value="3"/><!-- not supported -->
+	            <param name="randomText" value="047CA7D94B4F44455C6C7FB94F3844B1"/>
+	            <param name="initShowState" value="1"/>
+	            <param name="safePluginID" value="123456abcdefghijklmnopqrstuvwxyz"/>
+			</object>
+			
+	</body>
+	<script type="text/javascript" src="js/index.js" ></script>
+</html>
